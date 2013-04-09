@@ -1,0 +1,15 @@
+
+
+<h1 class='center'>Search for a movie</h1>
+
+<%= erb :search_form %>
+
+	<% if @movies == [] %>
+
+	<p class='center'>Go Ahead, Type in a movie! </p>
+
+	<% else %>
+	<%= erb :search_results %>
+
+	<p><%= ['Search'][0]['Title'] %></p>
+	<% end %>
